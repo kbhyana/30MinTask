@@ -5,9 +5,7 @@ var N_SIZE = 3,
   score,
   moves;
 
-/**
- * Initializes
- */
+
 function init() {
   var board = document.createElement('table');
   board.setAttribute('border', 1);
@@ -41,9 +39,7 @@ function init() {
   startNewGame();
 }
 
-/**
- * New game
- */
+
 function startNewGame() {
   score = {
     'X': 0,
@@ -55,38 +51,8 @@ function startNewGame() {
     square.innerHTML = EMPTY;
   });
 }
-/**
 
- * Check if a win or not
- */
-function win(clicked) {
-  // Get all cell classes
-  var memberOf = clicked.className.split(/\s+/);
-  for (var i = 0; i < memberOf.length; i++) {
-    var testClass = '.' + memberOf[i];
-    var items = contains('#tictactoe ' + testClass, turn);
-    // winning condition: turn == N_SIZE
-    if (items.length == N_SIZE) {
-      return true;
-    }
-  }
-  return false;
-}
 
-/**
- * Helper function to check if NodeList from selector has a particular text
- */
-/*
-function contains(selector, text) {
-  var elements = document.querySelectorAll(selector);
-  return [].filter.call(elements, function (element) {
-    return RegExp(text).test(element.textContent);
-  });
-}
-*/
-/**
- * Sets clicked square and also updates the turn.
- */
 function set() {
   if (this.innerHTML !== EMPTY) {
     return;
@@ -105,5 +71,6 @@ function set() {
     document.getElementById('turn').textContent = 'Player ' + turn;
   }
 }
+
 
 init();
