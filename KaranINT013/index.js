@@ -18,19 +18,20 @@
             }
           //Prints which player turn it is
           function turn(i){
-              document.getElementById("turn").innerHTML="Player "+ i+ " turn !"
+              alertpage("Player "+ i+ " turn !");
+             // document.getElementById("turn").innerHTML="Player "+ i+ " turn !"
           }
             //to reset game
             function reset(){
               i = 'X';
-              document.getElementById("turn").innerHTML="Player O turn !"
+     turn('O');
               win =0;
               count = 0;
               O=[];
               X=[];
                 //window.setTimeout($("#alert").css("display", "none"),3000);
                 for(var j=1;j<10;j++){
-                    document.getElementById(j).innerHTML=j;
+                    document.getElementById(j).innerHTML="";
                 }
             }
           function change( ){
@@ -61,7 +62,7 @@
               O.includes("1") & O.includes("5") & O.includes("9") | 
               O.includes("3") & O.includes("5") & O.includes("7"))
                   { //setTimeout(125);
-                      setTimeout(alertpage(i +' wins'), 125);
+                      setTimeout(alert(i +' wins'), 125);
                       win =1;
                       reset();
                       scoreX=scoreX-5;
@@ -96,7 +97,7 @@
               X.includes("3") & X.includes("5") & X.includes("7"))
 
                   {    // setTimeout(125);
-                      setTimeout(alertpage(i +' wins'), 125);
+                      setTimeout(alert(i +' wins'), 125);
                       win=1;
                       setTimeout(reset(), 125);
                       scoreO=scoreO-5;
@@ -202,7 +203,7 @@
                     alertpage("Please select different usernames!!");
                 }
         else
-        {
+        {   turn('O');
              $("#playero").attr("disabled", true);
             $("#playerx").attr("disabled", true);
             $(".container-fluid").show();

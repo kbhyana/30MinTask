@@ -2,9 +2,7 @@
     margin: 0;
     
 }
-#alert{
-    display: none;
-}
+
 .btn2 {
     margin: 5px;
 }
@@ -63,10 +61,12 @@ h2{
 
 .tic-box{
   border: solid black 1px;
-  font-size: 5vw;
+  font-size: 100px;
   background: blue;
   text-align: center;
   color: lavender;
+    height: 150px;
+    width: 100px;
 }
 .tic-box:hover{
   background: black;
