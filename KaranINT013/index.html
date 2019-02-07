@@ -1,15 +1,85 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<title>Tic Tac Toe</title>
-		<link rel="stylesheet" type="text/css" href="css/tic-tac-toe.css">
-	</head>
-	<body>
-		<div id="tictactoe"></div>
-		<div align="left">
-			<span id='turn'>Player X</span>
-		</div>
-		<script type="text/javascript" src="js/1.js"></script>
-	</body>
+<!doctype html>
+    <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="index.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="index.js"></script>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+       <h1 align ="center">Tic-Tac-Toe</h1>
+<div class ="container">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+          <h2 class="h" align="center">Player O</h2>
+        <span class="input-group-text" id="basic-addon1">@</span>
+      </div>
+      <input id="playero" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" >
+      <div class="input-group-prepend">
+          <h2 class="h" align="center">Player X</h2>
+    <span class="input-group-text" id="basic-addon1">@</span>
+  </div>
+  <input id="playerx" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+    <div class="score">
+        <p id="o">Score :</p>
+        <p id="x">Score :</p>
+    </div>
+    <div class="start">
+   <button type="button" id="start"class="btn btn-primary btn-lg " >Start Game !</button>
+    </div>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert" >
+          <p id="alert" align ="center">Welcome! Please enter usernames to proceed. Note: Usernames are case-sensitive!</p>
+          <!--button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button-->
+        </div>
+      </div>
+  <div class="container-fluid">
+      
+      <p></p>
+      <p id="turn" class="h3" align ="center"> Player O turn !</p>
+    <div class="row">
+      <div class="col-12 col-sm-6 content">
+        <div class="container-fluid tic-container">
+          <div class="row tic-row">
+            <div id="1" class="col-4 tic-box" > 1</div>
+            <div id="2" class="col-4 tic-box" > 2 </div>
+            <div id="3"  class="col-4 tic-box"> 3 </div>
+          </div>
+          <div class="row tic-row">
+            <div id="4" class="col-4 tic-box"> 4 </div>
+            <div id="5"  class="col-4 tic-box"> 5 </div>
+            <div id="6" class="col-4 tic-box"> 6 </div>
+          </div>
+          <div class="row tic-row">
+            <div id="7"  class="col-4 tic-box"> 7 </div>
+            <div id="8"  class="col-4 tic-box"> 8 </div>
+            <div id="9"  class="col-4 tic-box"> 9 </div>
+          </div>
+        </div>
+      </div>
+  </div>
+      
+          <button type="button" class="btn btn2 btn-dark" onclick="reset();"> Reset Game
+          </button>
+       <button type="button" class="btn btn2 btn-danger" onclick="location.reload();"> Reset Players
+          </button>
+</div>
+
+
+    <!-- Optional JavaScript -->
+      <script>
+       
+      </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>

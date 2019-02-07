@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    
+}
+#alert{
+    display: none;
+}
+.btn2 {
+    margin: 5px;
+}
+.container-fluid{
+
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+   margin-left: auto;
+    margin-right: auto;
+    
+}
+.score{
+    display: flex;
+    align-content: space-between;
+    flex-direction: row;
+    margin-left: auto;
+    
+    justify-content: space-around;
+}
+.input-group {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.container .start{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    width: ;
+}
+h2{
+    margin: 10px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content{
+  margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  background: lightblue;
+  padding: .4vw;
+}
+.tic-panel{
+  border: solid 2px black;
+  margin: auto;
+  background: #F4CC70;
+  padding: 10px;
+}
+
+.tic-box{
+  border: solid black 1px;
+  font-size: 5vw;
+  background: blue;
+  text-align: center;
+  color: lavender;
+}
+.tic-box:hover{
+  background: black;
+}
