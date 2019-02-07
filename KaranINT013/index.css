@@ -49,25 +49,22 @@ h2{
     margin-right: auto;
     margin-bottom: 10px;
     margin-top: 10px;
-  background: lightblue;
+ background: black;
   padding: .4vw;
 }
-.tic-panel{
-  border: solid 2px black;
-  margin: auto;
-  background: #F4CC70;
-  padding: 10px;
-}
+
 
 .tic-box{
-  border: solid black 1px;
+  border: solid white 1px;
   font-size: 100px;
-  background: blue;
   text-align: center;
-  color: lavender;
+  color: white;
     height: 150px;
     width: 100px;
 }
 .tic-box:hover{
-  background: black;
+background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
